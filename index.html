@@ -738,15 +738,20 @@
             const formData = new FormData(form);
             const data = Object.fromEntries(formData);
 
-            /* --- INSTRUÇÕES PARA CONECTAR AO GOOGLE SHEETS ---
-               (O código do Apps Script permanece o mesmo, veja na versão anterior se precisar)
-            */
+            // SEU LINK DO APPS SCRIPT
+            const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbw60_9T-OJLpuqncEXWVfmYyNs9HzuAJpQiLBmXri7w2MdMJRmAFQjeupChQg3KwTdbaw/exec"; 
 
-            const SCRIPT_URL = "SUA_URL_DO_GOOGLE_APPS_SCRIPT_AQUI"; 
-
-            // Simulação de envio
-            setTimeout(() => {
-                // Sucesso Simulado
+            // Envio real usando fetch
+            fetch(SCRIPT_URL, {
+                method: 'POST',
+                mode: 'no-cors', // Importante para evitar erros de CORS (Cross-Origin)
+                headers: {
+                    'Content-Type': 'text/plain;charset=utf-8', // Enviar como texto evita o "preflight" que o Google bloqueia
+                },
+                body: JSON.stringify(data)
+            })
+            .then(() => {
+                // Sucesso (Como usamos no-cors, a resposta é opaca, mas se chegou aqui, deu certo)
                 showToast();
                 form.reset();
                 
@@ -759,8 +764,17 @@
                     submitBtn.disabled = false;
                     submitBtn.classList.remove('opacity-70', 'cursor-not-allowed');
                 }, 3000);
-
-            }, 1500);
+            })
+            .catch(error => {
+                console.error('Erro:', error);
+                submitBtn.innerHTML = '<i class="fas fa-times mr-2"></i> Erro ao enviar';
+                
+                setTimeout(() => {
+                    submitBtn.innerHTML = originalBtnText;
+                    submitBtn.disabled = false;
+                    submitBtn.classList.remove('opacity-70', 'cursor-not-allowed');
+                }, 3000);
+            });
         });
 
         function showToast() {
