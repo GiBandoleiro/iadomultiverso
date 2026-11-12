@@ -145,6 +145,9 @@
             background: #ef4444;
             transform: rotate(-10deg);
         }
+
+        #privacyPage h2 { scroll-margin-top: 2rem; }
+        #privacyPage a { text-decoration: underline; text-underline-offset: 3px; }
     </style>
 </head>
 <body class="antialiased">
@@ -709,11 +712,95 @@
                 </a>
             </div>
 
-            <div class="text-gray-500 text-sm">
-                &copy; 2024 IA DO MULTIVERSO. Todos os direitos reservados.
+            <div class="flex flex-col items-center md:items-end gap-3">
+                <a href="#politica" id="openPrivacy" class="text-sm text-gray-400 hover:text-purple-300 transition-colors underline underline-offset-4">
+                    Política de Privacidade
+                </a>
+                <div class="text-gray-500 text-sm text-center md:text-right">
+                    &copy; 2024 IA DO MULTIVERSO. Todos os direitos reservados.
+                </div>
             </div>
         </div>
     </footer>
+
+
+    <!-- Página de Política de Privacidade: exibida quando a URL termina em /politica -->
+    <main id="privacyPage" class="hidden max-w-4xl mx-auto px-5 pb-20 relative z-10">
+        <section class="glass-card rounded-3xl p-7 md:p-12">
+            <div class="inline-flex items-center gap-2 text-xs uppercase tracking-widest text-purple-300 bg-purple-500/10 border border-purple-500/20 rounded-full px-4 py-2 mb-6">
+                <i class="fas fa-shield-alt"></i> Transparência e proteção de dados
+            </div>
+            <h1 class="font-display font-bold text-4xl md:text-5xl text-white mb-4">Política de Privacidade</h1>
+            <p class="text-gray-400 mb-2">IA DO MULTIVERSO</p>
+            <p class="text-sm text-gray-500 mb-8">Última atualização: 12 de novembro de 2026</p>
+
+            <div class="space-y-6 text-gray-400 leading-relaxed">
+                <p>Esta Política de Privacidade explica como a IA DO MULTIVERSO trata dados pessoais quando você acessa nosso site, entra em contato conosco, participa de nossas ações ou autoriza a conexão de uma conta do Instagram com ferramentas utilizadas por nosso serviço. Nosso objetivo é explicar quais informações podem ser tratadas, para quais finalidades e como você pode exercer seus direitos.</p>
+
+                <h2 class="text-xl font-bold text-white pt-3">1. Quem é responsável pelo tratamento</h2>
+                <p>O responsável pelo tratamento dos dados é o operador da marca e do serviço IA DO MULTIVERSO. Para dúvidas, solicitações ou exercício de direitos relacionados a esta Política, entre em contato pelo e-mail <a class="text-purple-300 underline" href="mailto:contato.iadomultiverso@gmail.com">contato.iadomultiverso@gmail.com</a>.</p>
+
+                <h2 class="text-xl font-bold text-white pt-3">2. Quais dados podemos coletar</h2>
+                <p>Dependendo de como você utiliza o site e dos recursos que autoriza, podemos tratar as seguintes categorias de dados:</p>
+                <ul class="list-disc pl-6 space-y-2">
+                    <li><strong class="text-gray-200">Dados fornecidos em formulários:</strong> nome, endereço de e-mail e número de telefone/WhatsApp, quando você preenche o formulário de cadastro ou solicita contato.</li>
+                    <li><strong class="text-gray-200">Dados de interação no Instagram:</strong> informações disponibilizadas pela Meta após a autorização da conta e das permissões solicitadas, que podem incluir identificadores da conta, nome ou nome de usuário, conteúdo de comentários e mensagens, identificadores de publicações e informações necessárias para responder às interações.</li>
+                    <li><strong class="text-gray-200">Dados técnicos:</strong> informações básicas de acesso, como endereço IP, data e hora, tipo de navegador e registros de funcionamento, quando disponibilizados pela infraestrutura utilizada.</li>
+                    <li><strong class="text-gray-200">Comunicações:</strong> conteúdo de mensagens e solicitações que você envia voluntariamente por nossos canais de atendimento.</li>
+                </ul>
+                <p>Não solicitamos senhas do Instagram. A conexão com serviços da Meta deve ocorrer pelos mecanismos oficiais de autorização da própria Meta.</p>
+
+                <h2 class="text-xl font-bold text-white pt-3">3. Como utilizamos os dados</h2>
+                <p>Os dados podem ser utilizados para responder a solicitações, dúvidas, comentários e mensagens; viabilizar funcionalidades autorizadas de gerenciamento e automação de interações do Instagram; realizar cadastros e contatos solicitados; prestar suporte; manter a segurança; prevenir fraudes; corrigir falhas; e cumprir obrigações legais.</p>
+                <p>Não utilizamos dados obtidos pela integração com o Instagram para vender informações pessoais. Não enviamos mensagens não solicitadas nem realizamos ações fora das permissões concedidas e das regras aplicáveis da Meta.</p>
+
+                <h2 class="text-xl font-bold text-white pt-3">4. Instagram e serviços da Meta</h2>
+                <p>Quando você interage com nosso perfil ou autoriza a conexão de uma conta profissional do Instagram, podemos utilizar a API e os produtos oficiais disponibilizados pela Meta para receber informações de interações e, quando permitido pelas permissões concedidas, responder a comentários e mensagens diretas (DMs).</p>
+                <p>O tratamento limita-se às finalidades informadas nesta Política e às permissões efetivamente aprovadas e concedidas. O uso desses recursos também está sujeito aos termos e à política de privacidade da Meta. Consulte a <a class="text-purple-300 underline" href="https://privacycenter.instagram.com/policy/" target="_blank" rel="noopener noreferrer">Política de Privacidade do Instagram</a> e a <a class="text-purple-300 underline" href="https://www.facebook.com/privacy/policy/" target="_blank" rel="noopener noreferrer">Política de Privacidade da Meta</a>.</p>
+                <p>A IA DO MULTIVERSO não é patrocinada, administrada ou endossada pela Meta Platforms, Inc. ou pelo Instagram.</p>
+
+                <h2 class="text-xl font-bold text-white pt-3">5. Compartilhamento de dados</h2>
+                <p>Os dados poderão ser processados por fornecedores de tecnologia estritamente necessários à operação do serviço, como hospedagem do site, armazenamento, ferramentas de automação e infraestrutura de formulários. O formulário deste site pode encaminhar os dados preenchidos para uma planilha ou serviço operado por meio do Google Apps Script.</p>
+                <p>Também poderemos compartilhar dados quando isso for necessário para cumprir uma obrigação legal, proteger direitos ou atender uma ordem válida de autoridade competente. Não comercializamos dados pessoais.</p>
+
+                <h2 class="text-xl font-bold text-white pt-3">6. Armazenamento e segurança</h2>
+                <p>Adotamos medidas técnicas e organizacionais razoáveis para proteger as informações contra acesso não autorizado, perda, alteração ou divulgação indevida. Os dados são mantidos somente pelo período necessário às finalidades descritas nesta Política, observadas obrigações legais e a necessidade de defesa de direitos.</p>
+                <p>Nenhum sistema é completamente livre de riscos. Caso ocorra um incidente relevante envolvendo dados pessoais, serão adotadas as providências cabíveis conforme a legislação aplicável.</p>
+
+                <h2 class="text-xl font-bold text-white pt-3">7. Transferência internacional</h2>
+                <p>Alguns fornecedores de tecnologia podem armazenar ou processar informações em servidores localizados fora do Brasil. Quando isso ocorrer, buscaremos utilizar fornecedores e mecanismos de transferência compatíveis com a legislação aplicável de proteção de dados.</p>
+
+                <h2 class="text-xl font-bold text-white pt-3">8. Seus direitos</h2>
+                <p>Nos termos da legislação aplicável, especialmente da Lei Geral de Proteção de Dados Pessoais (Lei nº 13.709/2018 – LGPD), você poderá solicitar, conforme aplicável:</p>
+                <ul class="list-disc pl-6 space-y-2">
+                    <li>confirmação da existência de tratamento e acesso aos dados;</li>
+                    <li>correção de dados incompletos, inexatos ou desatualizados;</li>
+                    <li>anonimização, bloqueio ou eliminação de dados desnecessários ou tratados em desconformidade;</li>
+                    <li>eliminação dos dados tratados com base no consentimento, observadas as exceções legais;</li>
+                    <li>informações sobre compartilhamento e possibilidade de revogar consentimentos.</li>
+                </ul>
+
+                <h2 class="text-xl font-bold text-white pt-3">9. Como solicitar a exclusão dos dados</h2>
+                <p>Para solicitar a exclusão de dados pessoais tratados pela IA DO MULTIVERSO, envie um e-mail para <a class="text-purple-300 underline" href="mailto:contato.iadomultiverso@gmail.com?subject=Solicita%C3%A7%C3%A3o%20de%20exclus%C3%A3o%20de%20dados">contato.iadomultiverso@gmail.com</a> com o assunto “Solicitação de exclusão de dados”. Informe como podemos localizar os dados e qual conta ou interação está relacionada ao pedido. Não envie senhas.</p>
+                <p>Se a solicitação estiver relacionada à conexão com o Instagram, você também poderá remover ou revogar o acesso do aplicativo nas configurações da sua conta Meta/Instagram. A revogação impede novos acessos por meio daquela autorização, mas não substitui necessariamente o pedido de exclusão dos dados já tratados pela IA DO MULTIVERSO.</p>
+                <p>Após recebermos a solicitação, verificaremos sua identidade quando necessário e responderemos dentro de prazo razoável. Poderemos manter informações específicas quando houver obrigação legal ou outra hipótese legítima de conservação.</p>
+
+                <h2 class="text-xl font-bold text-white pt-3">10. Crianças e adolescentes</h2>
+                <p>Nossos serviços não são direcionados intencionalmente a crianças. Caso identifiquemos o tratamento indevido de dados de crianças ou adolescentes, adotaremos as medidas adequadas conforme a legislação aplicável.</p>
+
+                <h2 class="text-xl font-bold text-white pt-3">11. Alterações nesta Política</h2>
+                <p>Esta Política poderá ser atualizada para refletir mudanças nos serviços, nas tecnologias utilizadas ou na legislação. A versão vigente estará disponível nesta página, com a data de sua última atualização.</p>
+
+                <h2 class="text-xl font-bold text-white pt-3">12. Contato</h2>
+                <p>Para dúvidas, solicitações ou exercício dos seus direitos de privacidade, entre em contato pelo e-mail <a class="text-purple-300 underline" href="mailto:contato.iadomultiverso@gmail.com">contato.iadomultiverso@gmail.com</a>.</p>
+            </div>
+
+            <div class="mt-10 pt-6 border-t border-white/10 flex flex-col sm:flex-row gap-4 justify-between items-center">
+                <a href="#" id="backToHome" class="inline-flex items-center gap-2 bg-purple-600 hover:bg-purple-500 text-white font-semibold px-6 py-3 rounded-xl transition-colors"><i class="fas fa-arrow-left"></i> Voltar ao site</a>
+                <a href="https://instagram.com/iadomultiverso" target="_blank" rel="noopener noreferrer" class="text-sm text-gray-400 hover:text-purple-300 transition-colors">Instagram @iadomultiverso</a>
+            </div>
+        </section>
+    </main>
 
     <!-- Scripts Funcionais -->
     <script>
@@ -807,6 +894,45 @@
             section.classList.add('transition-all', 'duration-1000', 'opacity-0', 'translate-y-10');
             observer.observe(section);
         });
+
+        // Abre e fecha a Política de Privacidade no mesmo HTML, sem mudar de URL.
+        (function () {
+            const privacyPage = document.getElementById('privacyPage');
+            const openPrivacy = document.getElementById('openPrivacy');
+            const backToHome = document.getElementById('backToHome');
+            const nav = document.querySelector('body > nav');
+            const homeHeader = document.querySelector('body > header');
+            const footer = document.querySelector('body > footer');
+            const homeSections = document.querySelectorAll('body > section');
+            const toast = document.getElementById('toast');
+
+            function showPrivacy(event) {
+                if (event) event.preventDefault();
+                if (nav) nav.classList.add('hidden');
+                if (homeHeader) homeHeader.classList.add('hidden');
+                if (footer) footer.classList.add('hidden');
+                homeSections.forEach(section => section.classList.add('hidden'));
+                if (toast) toast.classList.add('hidden');
+                if (privacyPage) privacyPage.classList.remove('hidden');
+                document.title = 'Política de Privacidade | IA DO MULTIVERSO';
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            }
+
+            function showHome(event) {
+                if (event) event.preventDefault();
+                if (privacyPage) privacyPage.classList.add('hidden');
+                if (nav) nav.classList.remove('hidden');
+                if (homeHeader) homeHeader.classList.remove('hidden');
+                if (footer) footer.classList.remove('hidden');
+                homeSections.forEach(section => section.classList.remove('hidden'));
+                document.title = 'Domine Vídeos com IA | IA DO MULTIVERSO';
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            }
+
+            if (openPrivacy) openPrivacy.addEventListener('click', showPrivacy);
+            if (backToHome) backToHome.addEventListener('click', showHome);
+        })();
+
     </script>
 </body>
 </html>
